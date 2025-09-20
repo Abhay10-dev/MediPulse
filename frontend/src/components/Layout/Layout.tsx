@@ -24,7 +24,7 @@ const Layout: React.FC<LayoutProps> = ({ user, onLogout, children }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 flex">
       {/* Mobile menu button */}
       <div className="lg:hidden fixed top-4 left-4 z-50">
         <button
@@ -42,7 +42,7 @@ const Layout: React.FC<LayoutProps> = ({ user, onLogout, children }) => {
         userRole={user?.role}
       />
 
-      <div className="lg:pl-64">
+      <div className="w-1200">
         <Header user={user} onLogout={handleLogout} />
         
         <main className="py-6">
